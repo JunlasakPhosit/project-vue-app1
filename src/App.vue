@@ -1,10 +1,22 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
+  
+  <Menu />
   <router-view/>
 </template>
+
+<script>
+import Menu from './components/Menu.vue'
+export default {
+  components: {
+    Menu
+  }
+}
+</script>
+
 
 <style>
 #app {
@@ -12,7 +24,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #5e8cb9;
 }
 
 nav {
